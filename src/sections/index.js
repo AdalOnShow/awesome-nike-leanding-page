@@ -1,4 +1,3 @@
-import Nav from './Nav'
 import Hero from './Hero'
 import PoplarProducts from './PoplarProducts';
 import SuperQuality from './SuperQuality';
@@ -9,7 +8,6 @@ import Subscribe from './Subscribe';
 import Footer from './Footer';
 
 export {
-  Nav,
   Hero,
   PoplarProducts,
   SuperQuality,
