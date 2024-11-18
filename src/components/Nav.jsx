@@ -6,7 +6,7 @@ import { useState } from 'react';
 const NavItems = () => {
   return (
     <div>
-      <ul className="flex-1 flex flex-col sm:flex-row justify-center items-center relative gap-5 lg:gap-16 z-20">
+      <ul className="flex-1 flex flex-col sm:flex-row justify-center items-center relative gap-5 lg:gap-16 z-[1]">
         {navLinks.map((nav, i) => (
           <li key={i} className="">
             <a href={nav.href} className="font-montserrat leading-normal text-lg text-slate-gray hover:text-gray-400" onClick={() => { }}>{nav.label}</a>
@@ -25,7 +25,7 @@ const Nav = () => {
   const toggleMenu = () => setIsOpen((prevIsOpen) => !prevIsOpen)
 
   return (
-    <header className="fixed top-0 left-0 padding-x py-8 z-10 w-full">
+    <header className="padding-x py-8 absolute z-10 w-full">
       <div className="flex justify-between max-container">
         <a href="/" className="">
           <img
