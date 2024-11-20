@@ -2,8 +2,8 @@ import { star } from '../assets/icons'
 
 const PoplarProductCard = ({ imgURL, name, price }) => {
   return (
-    <div className="flex flex-1 flex-col w-full max-sm:w-full">
-      <img src={imgURL} alt={name} className="size-[280px]"
+    <div className="flex flex-1 flex-col w-full max-sm:w-full hover:scale-105 transition-all duration-200">
+      <img src={imgURL} alt={name} className="size-[280px] hover:shadow-lg transition-all duration-200 cursor-pointer rounded-[20px]"
       />
 
       <div className="mt-8 flex justify-start gap-2.5">
